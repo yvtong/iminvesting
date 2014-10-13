@@ -1,30 +1,12 @@
 {
-  "name": "iminvesting web application",
-  "version": "1.0.0",
-  "description": "iminvesting.com R&D development",
+  "name": "workspace",
+  "version": "0.0.0",
+  "description": "workspace",
   "main": "server.js",
-  "keywords": [
-    "iminvesting.com",
-    "Investment",
-    "Stock market",
-    "Investor social network"
-  ],
   "author": {
     "name": "twei",
-    "email": "twei@solidreturn.co.uk",
-    "url": "http://www.solidreturn.co.uk/"
+    "email": ""
   },
-  "homepage": "http://www.solidreturn.co.uk/",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/twei2012/iminvesting"
-  },
-
-  "engines": {
-    "node": ">= 0.6.0",
-    "npm": ">= 1.0.0"
-  },
-
   "dependencies": {
     "bootstrap": "^3.2.0",
     "ejs": "^1.0.0",
@@ -32,5 +14,4 @@
     "jade": "*",
     "stylus": "*"
   }
-  
 }
