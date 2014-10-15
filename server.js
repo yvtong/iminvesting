@@ -28,7 +28,7 @@ require('./config/passport')(passport); // pass passport for configuration
 var app = express();
 
 // all environments
-app.set('port', process.env.PORT || 3000);
+//app.set('port', process.env.PORT || 3000);
 
 // set up our express application
 app.use(morgan('dev')); // log every request to the console
@@ -74,6 +74,9 @@ app.use(function (req, res) {
   
 });
 
-http.createServer(app).listen(app.get('port'), function () {
+var server_port = process.env.OPENSHIFT_NODEJS_PORT || 8080
+var server_ip_address = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1'
+
+http.createServer(app).listen(server_port, server_ip_address, function () {
     console.log('Express server listening on port ' + app.get('port'));
 });
